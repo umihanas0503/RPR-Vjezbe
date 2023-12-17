@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal8.KorisnikController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="56.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+  <children>
+    <Button fx:id="BtnDodaj" minWidth="60.0" mnemonicParsing="false" onAction="#dodajKorisnika" text="Dodaj" GridPane.columnIndex="1" GridPane.rowIndex="7">
+      <GridPane.margin>
+        <Insets left="60.0" />
+      </GridPane.margin>
+    </Button>
+    <Button fx:id="BtnKraj" minWidth="60.0" mnemonicParsing="false" onAction="#kraj" text="Kraj" GridPane.columnIndex="2" GridPane.rowIndex="7">
+      <GridPane.margin>
+        <Insets left="10.0" />
+      </GridPane.margin>
+    </Button>
+    <ListView fx:id="ListKorisnici" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" GridPane.rowSpan="4" />
+    <Label alignment="CENTER_RIGHT" text="Ime:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <GridPane.margin>
+        <Insets left="40.0" />
+      </GridPane.margin>
+    </Label>
+    <Label alignment="CENTER_RIGHT" text="Prezime:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <GridPane.margin>
+        <Insets left="40.0" />
+      </GridPane.margin>
+    </Label>
+    <Label alignment="CENTER_RIGHT" text="E-mail:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <GridPane.margin>
+        <Insets left="40.0" />
+      </GridPane.margin>
+    </Label>
+    <Label alignment="CENTER_RIGHT" text="Korisnicko ime:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <GridPane.margin>
+        <Insets left="40.0" />
+      </GridPane.margin>
+    </Label>
+    <Label alignment="CENTER_RIGHT" text="Lozinka:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+      <GridPane.margin>
+        <Insets left="40.0" />
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="FldIme" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <TextField fx:id="FldPrezime" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <TextField fx:id="FldEmail" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    <TextField fx:id="FldKorisnickoIme" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+    <TextField fx:id="FldLozinka" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label fx:id="NeispravnoKI" text=" " GridPane.columnIndex="2" GridPane.rowIndex="6" />
+  </children>
+</GridPane>
